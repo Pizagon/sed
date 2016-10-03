@@ -1,0 +1,51 @@
+Microchip Technology Inc, v1.26 (A)
+
+Tool Name:
+  c:\program files (x86)\microchip\xc16\v1.26\bin\bin\..\bin/elf-ld.exe
+
+Command:
+  -p33FJ128MC802 \
+  -o \
+  dist/default/production/Practica4.X.production.elf \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/.. \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/PIC24H/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC30F/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33E/gld \
+  -Lc:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../support/dsPIC33F/gld \
+  build/default/production/ensam.o \
+  build/default/production/main.o \
+  build/default/production/config.o \
+  --defsym=__MPLAB_BUILD=1 \
+  -Tp33FJ128MC802.gld.00 \
+  --stack=16 \
+  --check-sections \
+  --data-init \
+  --pack-data \
+  --handles \
+  --isr \
+  --no-gc-sections \
+  --fill-upper=0 \
+  --stackguard=16 \
+  --no-force-link \
+  --smart-io \
+  -Map=dist/default/production/Practica4.X.production.map \
+  --report-mem \
+  --memorysummary \
+  dist/default/production/memoryfile.xml \
+  -start-group \
+  --library=lega-pic30-elf \
+  --library=m-elf \
+  --library=lega-c-elf \
+  -end-group \
+
+
+Optional library libp33FJ128MC802.a not found
+Archive member included because of file (symbol)
+
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o)
+                              (__resetPRI)
+c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(data_init_standard.o)
+                              c:/program files (x86)/microchip/xc16/v1.26/bin/bin/../../lib\liblega-pic30-elf.a(crt0_standard.o) (__data_init_standard)
